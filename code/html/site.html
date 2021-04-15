@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CO2 Feedback device</title>
+  <link rel="stylesheet" href="style.min.css">
+  <script src="site.min.js"></script>
+</head>
+
+<body>
+  <div class="header center">
+    <h1>Sample Website</h1>
+  </div>
+  <div class="flex-container">
+    <div style="width:80%;">
+      <h4 class="center">Pick BLE ID</h4>
+      <div class="flex-container"><select id="BLESelect" size=1 class="select-css select-css-icon">
+        </select>
+      </div>
+      <br>
+      <div class="flex-container">
+        <button class="btn-block" multiple="false" onclick="submitBLEId()">Connect to Device</button>
+      </div>
+    </div>
+  </div>
+  <script src="site.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      populateBLEList();
+    });
+  </script>
+</body>
+
+</html>
