@@ -1,5 +1,8 @@
-// basic cmd line to connect to devices
+This is some boiler plate code that can be used to set up a device to serve webpages stored on the device. It enables easier development as the web pages are minfied, quoted and inserted into the webserver file automatically using gulp. This means you can easily develop the code and deploy it to the device easily.
 
+Once you have edited the files in the code directory, just run gulp and it will update the module in the modules folder. I then run the below commands to deploy the code to the device.
+
+// basic cmd line to connect to devices
 espruino -p COM10 --no-ble -b 115200
 
 
